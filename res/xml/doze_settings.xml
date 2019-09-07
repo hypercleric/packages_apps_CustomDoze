@@ -34,6 +34,12 @@
         android:title="@string/ambient_display_notifications"
         android:summary="@string/ambient_display_summary" />
 
+    <com.msm.xtended.preferences.SystemSettingSwitchPreference
+        android:key="force_ambient_for_media"
+        android:title="@string/force_ambient_for_media_title"
+        android:summary="@string/ambient_ticker_footer"
+        android:defaultValue="true" />
+
     <PreferenceCategory
         android:key="tilt_sensor"
         android:title="@string/tilt_sensor_title" >
@@ -73,4 +79,5 @@
         android:targetPackage="com.custom.ambient.display"
         android:targetClass="com.custom.ambient.display.DozeBrightness" />
     </Preference>
+
 </PreferenceScreen>
